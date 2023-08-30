@@ -42,7 +42,7 @@
 body{
     background-color: var(--clr-about-primary);
     font-family: var(--ff-text);
-    line-height: 1.15; 
+    line-height: 1.16; 
 }
 
 button,
