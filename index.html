@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="QTech is a webapp that provides well curated technical questions to enable you strength your skill level" />
-  <meta property="og:site_name" content="QTech" />
-  <meta property="og:title" content="QTech: The one place for technical quizzes" />
-  <meta property="og:description"
-    content="QTech is a webapp that provides well curated technical questions to enable you strength your skill level" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,400&family=Prompt:wght@500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>QTech</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-
-    </nav>
-  </header>
-  <main>
-
-  </main>
-  <footer>
-
-  </footer>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="QTech is a webapp that provides well curated technical questions to enable you strength your skill level"
+    />
+    <meta property="og:site_name" content="QTech" />
+    <meta
+      property="og:title"
+      content="QTech: The one place for technical quizzes"
+    />
+    <meta
+      property="og:description"
+      content="QTech is a webapp that provides well curated technical questions to enable you strength your skill level"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,400&family=Prompt:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>QTech</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/logo-qtech.png" alt="logo" />
+      <i id="open" class="fa-solid menu fa-bars" aria-expanded="false"></i>
+      <nav class="nav-menu">
+        <i id="close" class="fa-solid menu fa-xmark" aria-expanded="false"></i>
+        <ul class="nav-menu__items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Start Quiz</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="action-btn">
+          <a href="#"><button class="signin-btn btn">Sign In</button></a>
+          <a href="#"><button class="signout-btn btn">Sign Out</button></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+      </section>
+      <section class="card-list">
+        <div class="flex-items">
+          <h2>Top notch curated quizzes</h2>
+          <p>Bridge the gap between learning and mastery. Enhance your tech skills through targetted quizzes.</p>
+          <a href="#"><button class="btn">Get Started</button></a>
+        </div>
+        <img src="./assets/timeImage.jpg" alt="games">
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
+
