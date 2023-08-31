@@ -17,6 +17,10 @@ const quizList = [{
     {
         title: "Javascript Basics",
         description: "Test your knowledge of Javascript fundamentals"
+    },
+    {
+        title: "React Basics",
+        description: "Sharpen your knowledge on Basic react concepts"
     }
 ];
 
