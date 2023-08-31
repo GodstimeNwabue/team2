@@ -6,6 +6,9 @@
 //     navLinks.classList.toggle('active')
 // })
 
+
+
+// list of quizz cards
 const quizList = [{
         title: "HTML Basics",
         description: "Test your knowledge of HTML fundamentals"
@@ -31,7 +34,7 @@ function createQuizCard(quiz) {
     quizCard.classList.add("quiz");
     quizCard.innerHTML = `<h3 style="color: #212121;">${quiz.title}</h3>
 <p style="color: #909090;">${quiz.description}</p>
-<a href="quiz-detail.html" class="cta-button">Start Quiz</a>
+<a href="../Start Quiz/quiz-detail.html" class="cta-button">Start Quiz</a>
 `;
     return quizCard
 }
