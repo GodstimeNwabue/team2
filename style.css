@@ -77,6 +77,13 @@ strong {
 
 img {
   max-width: 100%;
+  display: block;
+  width: 500px;
+}
+
+.container{
+  margin: 0 auto;
+  width: 90%;
 }
 
 /* Home styling goes here */
@@ -90,6 +97,10 @@ header {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   position: relative;
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .logo {
@@ -112,6 +123,10 @@ header {
   box-shadow: 0px 3px 12px -3px rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.open[aria-expanded = true]{
+  display: flex;
 }
 
 .nav-menu__items {
@@ -157,6 +172,7 @@ header {
   border-radius: 10px;
   box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .signin-btn {
@@ -177,8 +193,74 @@ header {
   min-height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-position: center;
 }
+
+
+.card-list{
+  padding: 4rem 0;
+}
+
+.card-list__details{
+  margin: 3.9rem 0;
+  background-color: var(--clr-accent);
+  padding: 3rem 5rem;
+  border-radius: 20px;
+}
+
+.flex-items__text{
+  font-family: var(--ff--heading);
+  letter-spacing: 1px;
+}
+
+.flex-items__text h2{
+  color: var(--clr-heading-primary);
+  margin-top: 2.5rem;
+}
+
+.card-list__details > img{
+  margin-top: 3rem;
+}
+
+.flex-items__text p{
+  margin: 1.2rem 0;
+  letter-spacing: 1px;
+  line-height: 2;
+  font-family: var(--ff-text);
+  color: var(--clr-text-primary);
+
+}
+
+.btn{
+  transition: .6s;
+  box-shadow: 1px 3px 8px -3px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+
+.about{
+  background-color: var(--clr-heading-secondary);
+  padding: 5rem 0;
+}
+
+ .about-items__details{
+   
+    color: var(--clr-about-primary);
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+  .about-items__details h2{
+    font-size: var(--fs-heading-2);
+    font-family: var(--ff--heading);
+    margin: 3rem 0 1rem 0;
+  }
+
+
+
+
 /* BreakPoint for desktop */
 
 @media (min-width: 40em) {
@@ -229,4 +311,37 @@ header {
   .nav-menu__items li:hover::after {
     width: 100%;
   }
+
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-items__text{
+    width: 40%;
+  }
+
+  .flex-items__text h2{
+  font-size: var(--fs-heading-2);
+}
+
+  .about-items img{
+    margin: 0 4rem;
+  }
+
+  .about-items__details{
+    width: 40%;
+  }
+
+  .about-items__details h2{
+  font-weight: 600;
+  }
+
+  .about-items__details p{
+    margin-top: 2rem;
+    line-height: 2;
+    font-family: var(--ff-text);
+  }
+  
 }

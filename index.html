@@ -30,19 +30,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="import" href="./explore quizzes/front-end-quizzes.html" />
+    <link rel="import" href="./Start Quiz/quiz-detail.html" />
+    <script src="index.js" defer></script>
     <title>QTech</title>
   </head>
   <body>
     <header>
       <img class="logo" src="./assets/logo-qtech.png" alt="logo" />
       <i id="open" class="fa-solid menu fa-bars" aria-expanded="false"></i>
-      <nav class="nav-menu">
+      <nav class="nav-menu" aria-expanded="false">
         <i id="close" class="fa-solid menu fa-xmark" aria-expanded="false"></i>
         <ul class="nav-menu__items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Start Quiz</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li>
+            <a href="./explore quizzes/front-end-quizzes.html">Start Quiz</a>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
         <div class="action-btn">
           <a href="#"><button class="signin-btn btn">Sign In</button></a>
@@ -50,19 +55,45 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="hero">
-      </section>
-      <section class="card-list">
-        <div class="flex-items">
-          <h2>Top notch curated quizzes</h2>
-          <p>Bridge the gap between learning and mastery. Enhance your tech skills through targetted quizzes.</p>
-          <a href="#"><button class="btn">Get Started</button></a>
+    <main id="home">
+      <section class="hero"></section>
+      <section class="card-list container">
+        <div class="card-list__details flex">
+          <div class="flex-items__text">
+            <h2>Top curated quizzes</h2>
+            <p>
+              Bridge the gap between learning and mastery. Enhance your tech
+              skills through targetted quizzes.
+            </p>
+            <a href="#"><button class="btn signin-btn">Get Started</button></a>
+          </div>
+          <img src="./assets/timeImage.jpg" alt="games" />
         </div>
-        <img src="./assets/timeImage.jpg" alt="games">
+        <div class="card-list__details flex">
+          <img src="./assets/game.jpg" alt="games" />
+          <div class="flex-items__text">
+            <h2>Start quizzing Today</h2>
+            <p>
+              Choose from a range of quizzes in various tech skills. Challenge
+              yourself, track your progress and earn badges as you move closer
+              to becoming a confident expert.
+            </p>
+            <a href="./explore quizzes/front-end-quizzes.html"
+              ><button class="btn signin-btn">Browse Quizzes</button></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-items flex container">
+          <img src="./assets/neom-3qBi6HWZMeg-unsplash.jpg" alt="" />
+          <div class="about-items__details">
+            <h2 id="about">About Us</h2>
+            <p>We are an all in one tech quiz platform, dedicated to revolutionizing the way individuals learn and assess their knowledge. Through cutting-edge technology and engaging content, we empower learners of all ages to test their skills, expand their horizons, and embrace the thrill of continuous learning.</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
   </body>
 </html>
-
