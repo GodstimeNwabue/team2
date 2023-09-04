@@ -350,3 +350,214 @@ header {
   }
   
 }
+
+@media (max-width: 1109px) and (min-width: 955px) {
+  .action-btn {
+    display: grid;
+    gap: 8px;
+  }
+}
+
+/*Section styles for curation of different subject for frontend quizzes*/
+#front-end-quizzes {
+  /* padding: 5rem 0; */
+  text-align: center;
+}
+
+#front-end-quizzes .section-title {
+  font-size: var(--fs-heading-2);
+  /* font-size: 2rem; */
+  margin: 4rem 0rem;
+  font-family: var(--ff--heading);
+  color: var(--clr-heading-secondary);
+  /* color: #1e1b38; */
+}
+
+.quiz-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  /* margin-top: 3rem; */
+}
+
+.quiz {
+  /* background-color: #fff1ec; */
+  background-color: var(--clr-accent);
+  padding: 3rem;
+  border-radius: 10px;
+  /* box-shadow: 0 10px 20px rba(0, 0, 0, 0.1); */
+  text-align: center;
+  flex: 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width:  30%;
+  line-height: 1.7;
+}
+
+.quiz:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/*CTA button syles*/
+.cta-button {
+  display: inline-block;
+  background-color: var(--clr-button-primary);
+  /* background-color: #2d9da6; */
+  margin-top: 1rem;
+  color: var(--clr-primary);
+  /* color: #ffffff; */
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid var(--clr-button-primary);
+  /* border: 1px solid #2d9da6; */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--clr-button-secondary);
+  /* background-color: #5bc2be; */
+  border-color: var(--clr-button-secondary);
+  /* border-color: #5bc2be; */
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--clr-footer-bg);
+  /* background-color: #333333; */
+  color: var(--clr-primary);
+  /* color: #ffffff; */
+  text-align: center;
+  padding: 1rem 0;
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
+}
+
+/*Responsive media queries for frontend quizzes*/
+@media screen and (max-width: 768px) {
+  #front-end-quizzes {
+      padding: 3rem 0;
+  }
+
+  .quiz-list {
+      gap: 2rem;
+  }
+
+  .quiz {
+      flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quiz {
+      flex: 0 0 100%;
+  }
+}
+
+/* Section for start quiz styles*/
+
+#quiz-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#instructions {
+  margin-top: 20px;
+}
+
+#timer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.quiz-category-page {
+  max-width: 800px; /* Increased width for a better layout */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-category-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff; /* Blue heading color */
+}
+
+.quiz-category-page button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.quiz-category-page button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+ul.options {
+  list-style: none;
+  padding: 0;
+}
+
+ul.options li {
+  margin: 10px 0;
+}
+
+.question {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style the labels for radio options */
+ul.options label {
+  display: block;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul.options label:hover {
+  background-color: #ddd;
+}
+
+/* Style the selected radio option label */
+ul.options label input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style quiz feedback */
+#quiz-feedback {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Style timer display */
+#time-remaining {
+  color: #007bff; /* Blue timer color */
+  font-weight: bold;
+}
+
