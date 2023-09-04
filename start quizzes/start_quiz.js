@@ -87,17 +87,29 @@ document.addEventListener("DOMContentLoaded", function () {
         quizFeedback.style.display = "block";
         quizFeedback.innerHTML = `Quiz completed! Your score is ${score}/${quizQuestions.length}`;
     }
+    
+    const correctAnswers = [
+        "q1-a", // Correct answer for question 1
+        "q2-c", // Correct answer for question 2
+        "q3-b", // Correct answer for question 3
+        "q4-a", // Correct answer for question 4
+        "q5-a", // Correct answer for question 5
+    ];
 
     function checkAnswer() {
-        const selectedAnswer = document.querySelector(
-            `input[name="q${currentQuestionIndex + 1}"]:checked`
-        );
+        const selectedAnswer = document.querySelector(`input[name="q${currentQuestionIndex + 1}"]:checked`);
+
         if (selectedAnswer) {
-            // Handle the user's selection here if needed
-            // You can access the selected radio button's value using 'selectedAnswer.value'
-            // Example: console.log("Selected answer:", selectedAnswer.value);
+            const selectedAnswerId = selectedAnswer.id;
+            const correctAnswerId = correctAnswers[currentQuestionIndex];
+
+            if (selectedAnswerId === correctAnswerId) {
+                // Correct answer
+                score++;
+            }
 
             currentQuestionIndex++;
+
             if (currentQuestionIndex < quizQuestions.length) {
                 showQuestion(currentQuestionIndex);
             } else {
@@ -126,6 +138,6 @@ openButton.addEventListener("click", () => {
 })
 
 closeButton.addEventListener("click", () => {
-  navBar.classList.remove("open");
-  navBar.setAttribute("aria-expanded", false);
+    navBar.classList.remove("open");
+    navBar.setAttribute("aria-expanded", false);
 });

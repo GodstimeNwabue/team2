@@ -20,17 +20,17 @@ const quizList = [{
 {
     title: "CSS Styling",
     description: "Challenge yourself with CSS styling techniques.",
-    quizLink: "css_quiz.html"
+    quizLink: "../start quizzes/frontend_css_start_quiz.html"
 },
 {
     title: "Javascript Basics",
     description: "Test your knowledge of Javascript fundamentals",
-    quizLink: "javascript_quiz.html"
+    quizLink: "../start quizzes/frontend_javascript_quiz.html"
 },
 {
     title: "React Basics",
     description: "Sharpen your knowledge on Basic react concepts",
-    quizLink: "react_quiz.html"
+    quizLink: "../start quizzes/frontend_react_start_quiz.html"
 }
 ];
 
