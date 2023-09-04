@@ -22,7 +22,7 @@ Our project began with a collaborative brainstorming session. We believed that t
 
 ## Project Name: QTech
 
-Amid our brainstorming sessions, we stumbled upon an exciting concept - a quiz app. We named it **QTech - A Bridge to Mastery** to reflect its purpose of helping users bridge the gap to mastery through engaging quizzes and informative content.
+Amid our brainstorming sessions, we stumbled upon an exciting concept - a quiz app. We named it **QTech - A Bridge to Mastery** to reflect its purpose of helping users bridge the gap to mastery through engaging quizzes.
 
 ## Design
 
