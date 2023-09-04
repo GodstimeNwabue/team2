@@ -14,7 +14,7 @@
 
 ## Introduction
 
-Welcome to the README file for QTech - A Bridge to Mastery! This document will provide you with insights into our team's thought process, the inception of our project, design decisions, the challenges we faced, and the tools and resources we used throughout our journey.
+Welcome 👋 to the README file for QTech - A Bridge to Mastery! This document will provide you with insights into our team's thought process, the inception of our project, design decisions, the challenges we faced, and the tools and resources we used throughout our journey.
 
 ## Team Thought Process
 
