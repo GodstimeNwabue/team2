@@ -50,4 +50,4 @@ Our team utilized the following tools and resources to collaborate effectively:
 
 ## Conclusion
 
-QTech - A Bridge to Mastery is the result of our team's dedication, creativity, and collaborative spirit. We hope this README file provides you with valuable insights into our project's journey. Thank you for taking the time to learn about QTech, and we look forward to your engagement with our quiz app!
+QTech - A Bridge to Mastery is the result of our team's dedication, creativity, and collaborative spirit. We hope this README file provides you with valuable insights into our project's journey. Thank you for taking the time to learn about QTech, and we look forward to your engagement with our quiz app and collaboration!
