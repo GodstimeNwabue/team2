@@ -46,6 +46,15 @@ body {
   line-height: 1.16;
 }
 
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  max-width: 100%;
+}
+
+
 button,
 input,
 select,
@@ -439,6 +448,7 @@ footer {
   /* position: absolute;
   bottom: 0; */
   width: 100%;
+  margin-top: auto;
 }
 
 /*Responsive media queries for frontend quizzes*/
@@ -484,6 +494,7 @@ footer {
   max-width: 500px;
   /* Increased width for a better layout */
   margin: 20px auto;
+  min-width: 40%;
   padding: 20px;
   background-color: var(--clr-accent);
   border-radius: 10px;
