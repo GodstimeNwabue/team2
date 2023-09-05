@@ -264,6 +264,10 @@ header {
   margin: 3rem 0 1rem 0;
 }
 
+.about-items__details p {
+  word-break: break-all;
+}
+
 
 
 
