@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Start quiz</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,400&family=Prompt:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="flex-wrapper">
+        <header>
+            <img class="logo" src="../assets/logo-qtech.png" alt="logo" />
+            <i id="open" class="fa-solid menu fa-bars" aria-expanded="false"></i>
+            <nav class="nav-menu" aria-expanded="false">
+                <i id="close" class="fa-solid menu fa-xmark" aria-expanded="false"></i>
+                <ul class="nav-menu__items">
+                    <li><a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="../explore quizzes/front-end-quizzes.html">Start Quizzing</a>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="action-btn">
+                    <a href="#"><button class="signin-btn btn">Sign In</button></a>
+                    <a href="#"><button class="signout-btn btn">Sign Out</button></a>
+                </div>
+            </nav>
+        </header>
+        <div id="quiz-container">
+            <h1>Welcome to the Quiz!</h1>
+            <div id="instructions">
+                <!-- quiz instructions -->
+            </div>
+        </div>
+        <div id="timer">Time remaining: <span id="time-remaining">10:00</span></div>
+        <section id="front-end-quizzes front-end-quizzes_align" class="quiz-category-page">
+            <h2>HTML Basics Quiz</h2>
+            <button id="start-button">Start Quiz</button>
+            <div id="quiz-content" style="display: none">
+                <div class="question">
+                    <p>1. What does HTML stand for?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q1" id="q1-a" />
+                                Hyper Text Markup language
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q1" id="q1-b" />
+                                High Tech Modern language
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q1" id="q1-c" />
+                                Home Tool Management Language
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>2. What does HTML5 introduce that improves the structure of web documents?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q2" id="q2-a" />
+                                Cascading Style Sheets (CSS)
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q2" id="q2-b" />
+                                Hypertext Transfer Protocol (HTTP)
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q2" id="q2-c" />
+                                Semantic elements
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>3. Which tag is used to create a hyperlink in HTML?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q3" id="q3-a" />
+                                &lt;link&gt;
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q3" id="q3-b" />
+                                &lt;a&gt;
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q3" id="q3-c" />
+                                &lt;url&gt;
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>4. Which HTML attribute is used to define the alternative text for an image, important for
+                        accessibility?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q4" id="q4-a" />
+                                alt
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q4" id="q4-b" />
+                                src
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q4" id="q4-c" />
+                                href
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>5. What does the acronym "URL" stand for in the context of web development?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q5" id="q5-a" />
+                                Uniform Resource Locator
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q5" id="q5-b" />
+                                Universal Resource Locator
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q5" id="q5-c" />
+                                Uniform Resource Link
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="quiz-navigation">
+                    <button id="prev-question" style="display: none">Previous</button>
+                    <button id="next-question">Next</button>
+                    <button id="submit-quiz" style="display: none">Submit Quiz</button>
+                </div>
+            </div>
+            <div id="quiz-feedback" style="display: none"></div>
+        </section>
+        <footer>
+            <p>&copy; 2023 QTech. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+<script src="../start quizzes/start_quiz.js"></script>
+
+</html>
