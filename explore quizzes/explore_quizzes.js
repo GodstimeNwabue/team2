@@ -1,3 +1,4 @@
+// For mobile Navbar
 const openButton = document.querySelector("#open");
 const closeButton = document.querySelector("#close");
 const navBar = document.querySelector(".nav-menu");
@@ -12,6 +13,7 @@ closeButton.addEventListener("click", () => {
     navBar.setAttribute("aria-expanded", false);
 });
 
+// For selection of different courses
 const quizList = [{
         title: "HTML Basics",
         description: "Test your knowledge of HTML fundamentals",
