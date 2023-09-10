@@ -8,7 +8,6 @@ openButton.addEventListener("click", () => {
 })
 
 closeButton.addEventListener("click", () => {
-  navBar.classList.remove("open");
-  navBar.setAttribute("aria-expanded", false);
+    navBar.classList.remove("open");
+    navBar.setAttribute("aria-expanded", false);
 });
-
