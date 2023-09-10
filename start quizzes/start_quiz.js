@@ -1,4 +1,6 @@
+// Wait for the DOM to be fully loaded before executing the code
 document.addEventListener("DOMContentLoaded", function () {
+    // Select various HTML elements and store references to them in variables
     const startButton = document.getElementById("start-button");
     const quizContent = document.getElementById("quiz-content");
     const quizQuestions = document.querySelectorAll(".question");
@@ -8,13 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const quizFeedback = document.getElementById("quiz-feedback");
     const timer = document.getElementById("timer");
     const timeRemainingDisplay = document.getElementById("time-remaining");
-
+    
+    // Initialize quiz-related variables
     let currentQuestionIndex = 0;
     let score = 0;
-    let timeRemaining = 600; // 10 minutes in seconds
+    let timeRemaining = 60; // 1 minutes in seconds
     let timerInterval;
     let quizSubmitted = false; // Variable to track if the quiz has been submitted
 
+    //Function to start the quiz
     function startQuiz() {
         startButton.style.display = "none";
         quizContent.style.display = "block";
@@ -22,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         startTimer();
     }
 
+    // Function to start the timer
     function startTimer() {
         timerInterval = setInterval(function () {
             if (!quizSubmitted) {
@@ -35,14 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     }
 
+    // Function to update the timer display
     function updateTimerDisplay() {
         const minutes = Math.floor(timeRemaining / 60);
         const seconds = timeRemaining % 60;
-        timeRemainingDisplay.textContent = `${minutes}:${
+        timeRemainingDisplay.textContent = `${minutes <10 ? "0" : ""}${minutes}:${
         seconds < 10 ? "0" : ""
       }${seconds}`;
     }
 
+    // Set the initial time display to 2 minutes
+    updateTimerDisplay()
+
+    // Function to show a specific quiz question
     function showQuestion(index) {
         quizQuestions.forEach((question, i) => {
             if (i === index) {
@@ -81,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Function to finish the quiz
     function finishQuiz() {
         quizSubmitted = true; // Set the quizSubmitted variable to true
         quizContent.style.display = "none";
@@ -88,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         quizFeedback.innerHTML = `Quiz completed! Your score is ${score}/${quizQuestions.length}`;
     }
     
+    // Array of correct amswers
     const correctAnswers = [
         "q1-a", // Correct answer for question 1
         "q2-c", // Correct answer for question 2
@@ -96,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "q5-a", // Correct answer for question 5
     ];
 
+    // Function to check the user's selected answer
     function checkAnswer() {
         const selectedAnswer = document.querySelector(`input[name="q${currentQuestionIndex + 1}"]:checked`);
 
@@ -120,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Add event listeneers to buttons and elements
     startButton.addEventListener("click", startQuiz);
     nextButton.addEventListener("click", checkAnswer);
     prevButton.addEventListener("click", () =>
@@ -128,6 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
     submitButton.addEventListener("click", finishQuiz);
 });
 
+// Code for mobile navigation menu
 const openButton = document.querySelector("#open");
 const closeButton = document.querySelector("#close");
 const navBar = document.querySelector(".nav-menu");
