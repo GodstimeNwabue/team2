@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Start quiz</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,400&family=Prompt:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="flex-wrapper">
+        <!--Menu bar-->
+        <header>
+            <img class="logo" src="../assets/logo-qtech.png" alt="logo" />
+            <i id="open" class="fa-solid menu fa-bars" aria-expanded="false"></i>
+            <nav class="nav-menu" aria-expanded="false">
+                <i id="close" class="fa-solid menu fa-xmark" aria-expanded="false"></i>
+                <ul class="nav-menu__items">
+                    <li><a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="../explore quizzes/front-end-quizzes.html">Start Quizzing</a>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <!-- <div class="action-btn">
+                    <a href="#"><button class="signin-btn btn">Sign In</button></a>
+                    <a href="#"><button class="signout-btn btn">Sign Out</button></a>
+                </div> -->
+            </nav>
+        </header>
+        <!--Main content header-->
+        <div id="quiz-container">
+            <h1>Welcome to the Quiz!</h1>
+            <div id="instructions">
+                <!-- quiz instructions -->
+            </div>
+        </div>
+        <!--Main content-->
+        <div id="timer">Time remaining: <span id="time-remaining">10:00</span></div>
+        <section id="front-end-quizzes front-end-quizzes_align" class="quiz-category-page">
+            <h2>React Basics Quiz</h2>
+            <button id="start-button">Start Quiz</button>
+            <div id="quiz-content" style="display: none">
+                <div class="question">
+                    <p>1. What is React, and why is it used in web development?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q1" id="q1-a" />
+                                An open-source JavaScript library for building user interfaces.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q1" id="q1-b" />
+                                A CSS preprocessor for styling web pages.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q1" id="q1-c" />
+                                A JavaScript framework for building web applications.
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>2. What is JSX in React?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q2" id="q2-a" />
+                                JavaScript Execution Environment for React.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q2" id="q2-b" />
+                                A JavaScript extension that enables asynchronous code execution.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q2" id="q2-c" />
+                                JavaScript XML, an extension of JavaScript used for defining React components.
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>3. What is a component in React, and how do you create one?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q3" id="q3-a" />
+                                A component is a database schema in React, created using SQL.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q3" id="q3-b" />
+                                A component is a reusable UI element in React, created using JavaScript functions or
+                                class
+                                definitions.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q3" id="q3-c" />
+                                A component is a third-party module in React, installed using npm.
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>4. What is state in React, and how is it different from props?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q4" id="q4-a" />
+                                State is used for managing internal component data that can change over time. Props are
+                                used
+                                to pass data from parent to child components.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q4" id="q4-b" />
+                                State and props are interchangeable terms in React.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q4" id="q4-c" />
+                                State and props are both used for handling routing in React applications.
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>5. What is the purpose of React Router, and how does it work?</p>
+                    <ul class="options">
+                        <li>
+                            <label>
+                                <input type="radio" name="q5" id="q5-a" />
+                                React Router is a library for routing in single-page React applications, allowing
+                                navigation
+                                between different views or pages.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q5" id="q5-b" />
+                                React Router is a state management library for React.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="q5" id="q5-c" />
+                                React Router is used for handling HTTP requests in React.
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="quiz-navigation">
+                    <button id="prev-question" style="display: none">Previous</button>
+                    <button id="next-question">Next</button>
+                    <button id="submit-quiz" style="display: none">Submit Quiz</button>
+                </div>
+            </div>
+            <div id="quiz-feedback" style="display: none"></div>
+        </section>
+        <!--Footer content-->
+        <footer>
+            <p id="contact">&copy; 2023 QTech. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+<script src="../start quizzes/start_quiz.js"></script>
+
+</html>

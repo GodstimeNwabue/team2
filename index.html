@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="QTech is a webapp that provides well curated technical questions to enable you strength your skill level" />
+  <meta property="og:site_name" content="QTech" />
+  <meta property="og:title" content="QTech: The one place for technical quizzes" />
+  <meta property="og:description"
+    content="QTech is a webapp that provides well curated technical questions to enable you strength your skill level" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,400&family=Prompt:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="import" href="./explore quizzes/front-end-quizzes.html" />
+  <link rel="import" href="./Start Quiz/quiz-detail.html" />
+  <script src="index.js" defer></script>
+  <title>QTech -  A Bridge to Mastery</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <header>
+    <img class="logo" src="./assets/logo-qtech.png" alt="logo" />
+    <i id="open" class="fa-solid menu fa-bars" aria-expanded="false"></i>
+    <nav class="nav-menu" aria-expanded="false">
+      <i id="close" class="fa-solid menu fa-xmark" aria-expanded="false"></i>
+      <ul class="nav-menu__items">
+        <li><a href="#home">Home</a></li>
+        <li>
+          <a href="./explore quizzes/front-end-quizzes.html">Start Quizzing</a>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <!-- <div class="action-btn">
+        <a href="#"><button class="signin-btn btn">Sign In</button></a>
+        <a href="#"><button class="signout-btn btn">Sign Out</button></a>
+      </div> -->
+    </nav>
+  </header>
+  <!--Main content-->
+  <main id="home">
+    <section class="hero"></section>
+    <section class="card-list container">
+      <div class="card-list__details flex">
+        <div class="flex-items__text flex-items__order ">
+          <h2>Top curated quizzes</h2>
+          <p>
+            Bridge the gap between learning and mastery. Enhance your tech
+            skills through targetted quizzes.
+          </p>
+          <a href="#"><button class="btn signin-btn">Get Started</button></a>
+        </div>
+        <img src="./assets/timeImage.jpg" alt="games" />
+      </div>
+      <div class="card-list__details flex">
+        <img src="./assets/game.jpg" alt="games" class="flex-items__order" />
+        <div class="flex-items__text">
+          <h2>Start quizzing Today</h2>
+          <p>
+            Choose from a range of quizzes in various tech skills. Challenge
+            yourself, track your progress and earn badges as you move closer
+            to becoming a confident expert.
+          </p>
+          <a href="./explore quizzes/front-end-quizzes.html"><button class="btn signin-btn">Browse Quizzes</button></a>
+        </div>
+      </div>
+    </section>
+    <!--About us-->
+    <section class="about">
+      <div class="about-items flex container">
+        <img src="./assets/neom-3qBi6HWZMeg-unsplash.jpg" alt="" />
+        <div class="about-items__details">
+          <h2 id="about">About Us</h2>
+          <p>We are an all in one tech quiz platform, dedicated to revolutionizing the way individuals learn and assess
+            their knowledge. Through cutting-edge technology and engaging content, we empower learners of all ages to
+            test their skills, expand their horizons, and embrace the thrill of continuous learning.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!---Footer -->
+  <footer>
+    <p id="contact">&copy; 2023 QTech. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
