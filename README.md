@@ -1,6 +1,8 @@
 
 # team2 : QTech - A Bridge to Mastery
 
+![](./result/team2-theta.vercel.app_.jpg)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
